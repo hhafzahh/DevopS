@@ -38,6 +38,23 @@ pipeline{
                 }
             }
            
+           //Docker Login & Push Docker image to docker hub
+           stage('Login & Push Image to Docker Hub'){
+                steps{
+                    script{
+                        //docker login
+                        // wanted to use withCredentials with access token - secret text but not working
+                        //this method below is not so advisable.
+                        withDockerRegistry(credentialsId: 'credentials') {
+                            //push image into repo
+                            bat 'docker push haffydockerid/tomcat-project'
+                    }
+                }
+            }       
+           
+        }
+           
+           
         }
     
 }
