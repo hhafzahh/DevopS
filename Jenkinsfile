@@ -28,7 +28,7 @@ pipeline{
                 steps{
                     script{
                        //redirect to where target class is 
-                        dir("C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\usermanagement-devops\DevopS"){
+                        dir("C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/usermanagement-devops/DevopS"){
                            
                            bat 'dir'
                  
