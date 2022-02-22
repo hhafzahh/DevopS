@@ -19,7 +19,7 @@ pipeline{
            stage('Test'){
               steps{
                  script{
-                    bat 'mvn -f pom.xml test'  
+                    bat 'mvn -f DevopS/pom.xml test'  
                  }
                 
               }
