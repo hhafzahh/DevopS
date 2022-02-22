@@ -22,6 +22,17 @@ pipeline{
                     }
                 }
             }
+           
+           //build docker img
+           stage('Build Docker Image'){
+                steps{
+                    script{
+                        bat 'docker build -t haffydockerid/tomcat-project -f Dockerfile .'
+                       
+                    }
+                }
+            }
+           
         }
     
 }
