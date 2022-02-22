@@ -7,12 +7,23 @@ pipeline{
         }
         
         stages{
+            //Checkout & Build Stage
             stage('Build Maven'){
                 steps{
                     checkout([$class: 'GitSCM', branches: [[name: '*/testbranch']], extensions: [], userRemoteConfigs: [[credentialsId: 'ed8c467f-1450-4e94-9be8-ade7fbfb88b0', url: 'https://github.com/hhafzahh/DevopS.git']]])
                     bat 'mvn -f DevopS/pom.xml clean install test'
                 }
             }
+           
+           //Test Stage
+           stage('Test'){
+              steps{
+                 script{
+                    bat 'mvn -f pom.xml test'  
+                 }
+                
+              }
+           }
             
             //assuming startup.bat is running
             stage('Deploy To Tomcat'){
