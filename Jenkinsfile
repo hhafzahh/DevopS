@@ -27,8 +27,13 @@ pipeline{
            stage('Build Docker Image'){
                 steps{
                     script{
-                        bat 'docker build -t haffydockerid/tomcat-project -f Dockerfile .'
-                       
+                       //redirect to where target class is 
+                        dir("C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\usermanagement-devops\DevopS"){
+                           
+                           bat 'dir'
+                 
+                           bat 'docker build -t haffydockerid/tomcat-project -f Dockerfile .'
+                       }
                     }
                 }
             }
