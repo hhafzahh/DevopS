@@ -81,7 +81,7 @@ pipeline{
    
     post {
         failure {
-            //sends failure message
+               //sends failure & error log email upon build failure
                emailext attachLog: true, body: '''You are seeing this email because your jenkins pipeline just failed. You can use the logs attached to this email to see what is the error 
 
                Regards
