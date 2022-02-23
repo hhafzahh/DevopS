@@ -43,7 +43,7 @@ pipeline{
                            
                            bat 'dir'
                  
-                           bat 'docker build -t haffydockerid/tomcat-project -f Dockerfile .'
+                           bat 'docker build -t haffydockerid/user-project -f Dockerfile .'
                        }
                     }
                 }
@@ -58,7 +58,7 @@ pipeline{
                         //this method below is not so advisable.
                         withDockerRegistry(credentialsId: 'credentials') {
                             //push image into repo
-                            bat 'docker push haffydockerid/tomcat-project'
+                            bat 'docker push haffydockerid/user-project'
                     }
                 }
             }       
@@ -69,8 +69,8 @@ pipeline{
           stage('Docker Deploy'){
            steps{
               script{
-                    // bat 'docker run --name dply2 -p 8888:8080 haffydockerid/tomcat-project'
-                    echo 'hi'
+                    // bat 'docker run --name dply2 -p 8888:8080 haffydockerid/user-project'
+                    echo 'try with command prompt instead'
                     
               }
 
@@ -81,7 +81,7 @@ pipeline{
    
     post {
         failure {
-    // One or more steps need to be included within each condition's block.
+            //sends failure message
            emailext attachLog: true, body: 'this is an error build failure event by jenkins', subject: 'This is the Failure build email', to: 'schoolpurpoze@gmail.com'
         }
     }
