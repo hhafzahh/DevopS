@@ -82,7 +82,11 @@ pipeline{
     post {
         failure {
             //sends failure message
-           emailext attachLog: true, body: 'this is an error build failure event by jenkins', subject: 'This is the Failure build email', to: 'schoolpurpoze@gmail.com'
+               emailext attachLog: true, body: '''You are seeing this email because your jenkins pipeline just failed. You can use the logs attached to this email to see what is the error 
+
+               Regards
+               Jenkins
+               Hafsah Hussain''', subject: 'Jenkins Pipeline Build Failure', to: 'schoolpurpoze@gmail.com'
         }
     }
 }
