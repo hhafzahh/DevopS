@@ -1,3 +1,4 @@
+package com.sddevops.devops;
 public class User {
 	
 	protected String name;
