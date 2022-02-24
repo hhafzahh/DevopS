@@ -1,5 +1,6 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.sql.Connection;
 import java.util.List;
 
 import org.junit.jupiter.api.AfterEach;
@@ -33,10 +34,7 @@ class UserServletTest {
 		webDriver.close();
 	}
 
-	@Test
-	void testGetConnection() {
-		fail("Not yet implemented"); // TODO
-	}
+	
 	@Test
 	void testGetUsers() {
 		webDriver.navigate().to("http://localhost:8090/DevopS/UserServlet/dashboard");
@@ -79,5 +77,10 @@ class UserServletTest {
 		System.out.println("========================================================================");
 		
 	}
+	
+	@Test
+	void testUpdateUser() {}
+	
+	
 
 }
