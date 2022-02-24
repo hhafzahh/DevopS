@@ -20,6 +20,7 @@ class UserServletTest {
 	
 	private WebDriver webDriver;
 
+	
 	@BeforeEach
 	void setUp() throws Exception {
 		//Setting system properties of ChromeDriver
@@ -32,6 +33,7 @@ class UserServletTest {
 		  webDriver = new ChromeDriver();  
 	}
 
+	
 	@AfterEach
 	void tearDown() throws Exception {
 		webDriver.close();
@@ -75,7 +77,7 @@ class UserServletTest {
 		//check last row of added data 
 		String table2= webDriver.findElement(By.xpath("//table[@class='table']/tbody/tr[last()]")).getAttribute("innerHTML");
 		System.out.println(table2);
-		assert(table2.contains("user2@gmail.com"));
+		assert(table2.contains("user2"));
 		
 		
 		System.out.println("========================================================================");
