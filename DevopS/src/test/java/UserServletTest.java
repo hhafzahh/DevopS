@@ -125,7 +125,7 @@ class UserServletTest {
 		//Pattern pattern = Pattern.compile(regex);
 		//Matcher matcher = pattern.matcher(row2);
 		//System.out.println(row2 +":"+ matcher.matches());
-		System.out.println("========================================================================");
+		//System.out.println("========================================================================");
 	}
 	
 	
