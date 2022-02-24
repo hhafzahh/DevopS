@@ -109,7 +109,7 @@ class UserServletTest {
 		String row = webDriver.findElement(By.xpath("//tbody//tr//td")).getAttribute("innerHTML");
 		System.out.println(row);
 		assert(!row.contains("Hafsah"));
-		System.out.println("========================================================================");
+		System.out.println("-------------------------------------------------------------------------------------------");
 	}
 	
 	@Test
