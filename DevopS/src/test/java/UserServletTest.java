@@ -2,6 +2,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.Connection;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,6 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+
 class UserServletTest {
 	
 	
@@ -48,7 +51,8 @@ class UserServletTest {
 		List<WebElement> rows = webDriver.findElements(By.xpath("//table[@class='table']/tbody/tr"));
 		int count = rows.size();
 		System.out.println("ROW COUNT : "+count);
-		Assert.assertEquals(count, 4);
+		//Assert.assertEquals(count, 6);
+		Assert.assertTrue(count < 10);
 	}
 	
 	@Test 
@@ -79,7 +83,55 @@ class UserServletTest {
 	}
 	
 	@Test
-	void testUpdateUser() {}
+	void testUpdateUser() {
+		//Updating the first user we see in the table (the top user) 
+		//Updating name and Password
+		webDriver.navigate().to("http://localhost:8090/DevopS/UserServlet/dashboard");
+		webDriver.findElement(By.xpath("//tbody//tr//td//a")).click();
+		System.out.println(webDriver.getCurrentUrl());
+		System.out.println(webDriver.getPageSource());
+		webDriver.findElement(By.name("name")).clear();
+		webDriver.findElement(By.name("name")).sendKeys("Hafsah");
+		webDriver.findElement(By.name("password")).clear();
+		webDriver.findElement(By.name("password")).sendKeys("P@ss");
+		webDriver.findElement(By.className("btn-success")).click();
+	    String updateTable = webDriver.findElement(By.xpath("//tbody//tr//td")).getAttribute("innerHTML");
+		System.out.println(updateTable);
+		assert(updateTable.contains("Hafsah"));
+		System.out.println("========================================================================");
+	}
+	
+	
+	@Test
+	void testDeleteUser() {
+		webDriver.navigate().to("http://localhost:8090/DevopS/UserServlet/dashboard");
+		webDriver.findElement(By.xpath("//tbody//tr//td//a[last()]")).click();
+		String row = webDriver.findElement(By.xpath("//tbody//tr//td")).getAttribute("innerHTML");
+		System.out.println(row);
+		assert(!row.contains("Hafsah"));
+		System.out.println("========================================================================");
+	}
+	
+	@Test
+	void checkValidEmail() {
+		webDriver.navigate().to("http://localhost:8090/DevopS/UserServlet/dashboard");
+		//check first row , 3rd column
+		String row2 = webDriver.findElement(By.xpath("//tbody//tr//td[3]")).getAttribute("innerHTML");
+		System.out.println("---------------------------------------------------------------------------------------------");
+		System.out.println(row2);
+		System.out.println(row2.contains("@"));
+		assert(row2.contains("@"));
+		//String regex = new RegExp('[a-z0-9]+@[a-z]+\.[a-z]{2,3}');
+		//Pattern pattern = Pattern.compile(regex);
+		//Matcher matcher = pattern.matcher(row2);
+		//System.out.println(row2 +":"+ matcher.matches());
+		System.out.println("========================================================================");
+	}
+	
+	
+	
+	
+	
 	
 	
 
