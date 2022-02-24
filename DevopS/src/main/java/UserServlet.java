@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
 
+
 /**
  * Servlet implementation class UserServlet
  */
@@ -54,6 +55,8 @@ public class UserServlet extends HttpServlet {
     	}
     	return connection;
     	}
+    
+   
     
 	private void listUsers(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException
@@ -179,5 +182,10 @@ public class UserServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
+	
+	
+	
 
 }
+
+
