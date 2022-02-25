@@ -1,4 +1,4 @@
-FROM tomcat:8.5.75-jre8-temurin
+FROM tomcat:8
 
 COPY target/DevopS-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/
 EXPOSE 8010
