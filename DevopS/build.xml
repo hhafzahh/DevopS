@@ -4,7 +4,7 @@
 	<target name = "runjunit" depends = "compile">
 	</target>
 	<target name = "compile">
-		<javac includeantruntime="false" srcdir="./src/test" destdir="staging" classpath = "C:/Users/Hafsah/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0-sources.jar"/>
+		<javac includeantruntime="false" srcdir="./src/test" classpath = "C:/Users/Hafsah/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0-sources.jar"/>
 		
 	</target>
 </project>
