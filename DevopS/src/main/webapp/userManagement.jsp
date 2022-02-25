@@ -11,7 +11,7 @@
 <body>
 <div class="row">
 <div class="container">
-<h3 class="text-center">List of Users</h3>
+<h3 class="text-center" id="listOfUsers" >List of Users</h3>
 <hr>
 <div class="container text-left">
 <!-- Add new user button redirects to the register.jsp page -->
