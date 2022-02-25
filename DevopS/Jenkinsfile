@@ -29,7 +29,7 @@ pipeline{
             stage('Deploy To Tomcat'){
                 steps{
                     script{ 
-                       deploy adapters: [tomcat9(credentialsId: 'f7add778-3ac8-40fb-a07a-bc52030d335d', path: '', url: 'http://localhost:8090')], contextPath: 'usermanagement-devops', onFailure: false, war: '**/*.war'
+                       deploy adapters: [tomcat9(credentialsId: 'f7add778-3ac8-40fb-a07a-bc52030d335d', path: '', url: 'http://localhost:8090')], contextPath: 'DevopS', onFailure: false, war: '**/*.war'
                     }
                 }
             }
