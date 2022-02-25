@@ -1,7 +1,3 @@
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.sql.Connection;
@@ -19,11 +15,10 @@ import org.testng.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-@RunWith(Suite.class)
-@SuiteClasses({})
-public class UserTests {
+class UserTests {
 	
-private WebDriver webDriver;
+	
+	private WebDriver webDriver;
 
 	
 	@BeforeEach
