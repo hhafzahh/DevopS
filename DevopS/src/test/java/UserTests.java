@@ -33,7 +33,7 @@ public class UserTests {
   @Test
   public void listUsersTest() {
 	  webDriver.navigate().to("http://localhost:8090/DevopS/UserServlet/dashboard");
-	  String Heading = webDriver.findElement(By.name("listOfUsers")).getAttribute("innerHTML");
+	  String Heading = webDriver.findElement(By.id("listOfUsers")).getAttribute("innerHTML");
 	  Assert.assertTrue(Heading.contains("List of Users"));
   }
 
@@ -43,7 +43,7 @@ public class UserTests {
 		webDriver.findElement(By.xpath("//tbody//tr//td//a")).click();
 		System.out.println(webDriver.getCurrentUrl());
 		System.out.println(webDriver.getPageSource());
-		String Title = webDriver.findElement(By.name("edit")).getAttribute("innerHTML");
+		String Title = webDriver.findElement(By.id("edit")).getAttribute("innerHTML");
 		Assert.assertTrue(Title.contains("Edit User"));
   }
 
