@@ -22,6 +22,10 @@
     <junit-jupiter.groupId>org.junit.jupiter</junit-jupiter.groupId>
     <junit-jupiter.artifactId>junit-jupiter</junit-jupiter.artifactId>
     <junit-jupiter.version>5.7.0</junit-jupiter.version>
+	   
+	<sonar.organization>hhafzahh12</sonar.organization>
+	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+
   </properties>
   
   <dependencies>
