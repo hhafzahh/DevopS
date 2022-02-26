@@ -65,8 +65,8 @@ class UserServletTest {
 		// so the above test will fail if this test is success
 		webDriver.navigate().to("http://localhost:8090/DevopS/register.jsp");
 		// fill in form
-		webDriver.findElement(By.id("name")).sendKeys("user2");
-		webDriver.findElement(By.id("email")).sendKeys("user2@gmail.com");
+		webDriver.findElement(By.id("name")).sendKeys("user6");
+		webDriver.findElement(By.id("email")).sendKeys("user6@gmail.com");
 		webDriver.findElement(By.id("psw")).sendKeys("pass");
 		Select se = new Select(webDriver.findElement(By.xpath("//*[@name='language']")));
 		// Select the option by index
@@ -79,10 +79,8 @@ class UserServletTest {
 		//check last row of added data 
 		String table2= webDriver.findElement(By.xpath("//table[@class='table']/tbody/tr[last()]")).getAttribute("innerHTML");
 		System.out.println(table2);
-		assert(table2.contains("user2"));
-		
-		
-		System.out.println("========================================================================");
+		assert(table2.contains("user6"));	
+		System.out.println("--------------------------------------------------------------");
 		
 	}
 	
