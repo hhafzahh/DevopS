@@ -36,6 +36,7 @@ public class RegisterServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html");
@@ -66,6 +67,7 @@ public class RegisterServlet extends HttpServlet {
 			PrintWriter writer = response.getWriter();
 			writer.println("<h1>" + "You have successfully registered an account!" +
 			"</h1>" + "<a href=/DevopS/UserServlet/dashboard>" + "Back to Dashboard" + "</a>");
+
 			writer.close();
 			}
 		}

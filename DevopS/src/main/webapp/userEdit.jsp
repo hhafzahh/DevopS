@@ -31,8 +31,8 @@
                 <form action="insert" method="post">
             </c:if>
             <caption>
-                <h2>
-                    <c:if test="${user != null}">
+                <h2 name = "edit">
+                    <c:if test="${user != null}" >
                         Edit User
                     </c:if>
                     <c:if test="${user == null}">

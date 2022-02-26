@@ -1,0 +1,92 @@
+pipeline{
+   
+        agent any
+        tools{
+            maven 'maven 3.8.2'
+            jdk 'JDK 1.8'
+        }
+        
+        stages{
+            //Checkout & Build Stage
+            stage('Build Maven'){
+                steps{
+                    checkout([$class: 'GitSCM', branches: [[name: '*/testbranch']], extensions: [], userRemoteConfigs: [[credentialsId: 'ed8c467f-1450-4e94-9be8-ade7fbfb88b0', url: 'https://github.com/hhafzahh/DevopS.git']]])
+                    bat 'mvn -f DevopS/pom.xml clean install test'
+                }
+            }
+           
+           //Test Stage
+           stage('Test'){
+              steps{
+                 script{
+                    bat 'mvn -f DevopS/pom.xml test'  
+                 }
+                
+              }
+           }
+            
+            //assuming startup.bat is running
+            stage('Deploy To Tomcat'){
+                steps{
+                    script{ 
+                       deploy adapters: [tomcat9(credentialsId: 'f7add778-3ac8-40fb-a07a-bc52030d335d', path: '', url: 'http://localhost:8090')], contextPath: 'DevopS', onFailure: false, war: '**/*.war'
+                    }
+                }
+            }
+           
+           //build docker img
+           stage('Build Docker Image'){
+                steps{
+                    script{
+                       //redirect to where target class is 
+                        dir("C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/usermanagement-devops/DevopS"){
+                           
+                           bat 'dir'
+                 
+                           bat 'docker build -t haffydockerid/user-project -f Dockerfile .'
+                       }
+                    }
+                }
+            }
+           
+           //Docker Login & Push Docker image to docker hub
+           stage('Login & Push Image to Docker Hub'){
+                steps{
+                    script{
+                        //docker login
+                        // wanted to use withCredentials with access token - secret text but not working
+                        //this method below is not so advisable.
+                        withDockerRegistry(credentialsId: 'credentials') {
+                            //push image into repo
+                            bat 'docker push haffydockerid/user-project'
+                    }
+                }
+            }       
+           
+        }
+           
+            
+          stage('Docker Deploy'){
+           steps{
+              script{
+                    // bat 'docker run --name dply2 -p 8888:8080 haffydockerid/user-project'
+                    echo 'try with command prompt instead'
+                    
+              }
+
+           }
+        }     
+   }
+   
+   
+    post {
+        failure {
+               //sends failure & error log email upon build failure
+                emailext attachLog: true, body: '''You are seeing this email because your jenkins pipeline just failed. You can use the logs attached to this email to see what is the error 
+
+Regards
+Jenkins
+Hafsah Hussain''', subject: 'Build Failure', to: 'schoolpurpoze@gmail.com'
+        }
+    }
+}
