@@ -4,7 +4,10 @@
   <artifactId>DevopS</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  
+  <properties>
+  <sonar.organization>hhafzahh12</sonar.organization>
+  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+</properties>
   <dependencies>
 	<dependency>
 		<groupId>javax.servlet</groupId>
