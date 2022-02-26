@@ -3,6 +3,7 @@ import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -11,14 +12,23 @@ public class RegisterServletTest {
 	private WebDriver webDriver;
   @BeforeTest
   public void beforeTest() {
-	//Setting system properties of ChromeDriver
+	  
+	
+	  
+	
+	   //Setting system properties of ChromeDriver
 	  //to amend directory path base on your local file path
-	  String chromeDriverDir = "C:\\Users\\Hafsah\\chromedriver.exe";
+	  String chromeDriverDir = "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\tools\\chromedriver\\chromedriver.exe";
 
 	  System.setProperty("webdriver.chrome.driver", chromeDriverDir);
 
 	  ///initialize FirefoxDriver at the start of test
 	  webDriver = new ChromeDriver();  
+	  
+	  
+
+	  
+	  
   }
 
   @AfterTest

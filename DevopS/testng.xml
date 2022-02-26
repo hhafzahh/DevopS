@@ -6,7 +6,7 @@
       <class name="RegisterServletTest"/>
 		<class name="UserTests"/>
 		<class name="connectionTest"/>	
-	<class name="UserServletTest"/>
+	
 	
     </classes>
   </test> <!-- Test -->

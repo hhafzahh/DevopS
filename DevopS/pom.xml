@@ -65,16 +65,22 @@
 	
 	
 	 <dependency>
-    <groupId>${selenium.groupId}</groupId>
-    <artifactId>${selenium.artifactId}</artifactId>
-    <version>${selenium.version}</version>
+	    <groupId>${selenium.groupId}</groupId>
+	    <artifactId>${selenium.artifactId}</artifactId>
+	    <version>${selenium.version}</version>
     </dependency>
     <dependency>
-    <groupId>${testng.groupId}</groupId>
-    <artifactId>${testng.artifactId}</artifactId>
-    <version>${testng.version}</version>
+	    <groupId>${testng.groupId}</groupId>
+	    <artifactId>${testng.artifactId}</artifactId>
+	    <version>${testng.version}</version>
     <scope>test</scope>
     </dependency>
+    
+    <dependency>
+	    <groupId>org.seleniumhq.selenium</groupId>
+	    <artifactId>selenium-java</artifactId>
+	    <version>3.141.59</version>
+	</dependency>
 
 </dependencies>
   

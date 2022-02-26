@@ -1,61 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="5" passed="5" failed="0" skipped="0">
+<testng-results total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-26T00:04:18Z" name="project" finished-at="2022-02-26T00:04:21Z" duration-ms="3018">
+  <suite started-at="2022-02-26T01:58:36Z" name="Default suite" finished-at="2022-02-26T01:58:47Z" duration-ms="10661">
     <groups>
     </groups>
-    <test started-at="2022-02-26T00:04:18Z" name="Test" finished-at="2022-02-26T00:04:21Z" duration-ms="3018">
-      <class name="connectionTest">
-        <test-method signature="getConnectionTest()[pri:0, instance:connectionTest@5dd1c9f2]" started-at="2022-02-26T08:04:21Z" name="getConnectionTest" finished-at="2022-02-26T08:04:21Z" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getConnectionTest -->
-      </class> <!-- connectionTest -->
+    <test started-at="2022-02-26T01:58:36Z" name="Default test" finished-at="2022-02-26T01:58:47Z" duration-ms="10661">
       <class name="RegisterServletTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:18Z" name="beforeTest" finished-at="2022-02-26T08:04:19Z" duration-ms="1018" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:RegisterServletTest@1115ec15]" started-at="2022-02-26T09:58:36Z" name="beforeTest" finished-at="2022-02-26T09:58:36Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 99
+Current browser version is 98.0.4758.102 with binary path C:\Users\Hafsah\AppData\Local\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HAFSAH', ip: '192.168.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00E25AD3+2579155]
+	Ordinal0 [0x00DBA3E1+2139105]
+	Ordinal0 [0x00CB40B8+1065144]
+	Ordinal0 [0x00CD3C55+1195093]
+	Ordinal0 [0x00CCF89F+1177759]
+	Ordinal0 [0x00CCD161+1167713]
+	Ordinal0 [0x00CFF9EF+1374703]
+	Ordinal0 [0x00CFF61A+1373722]
+	Ordinal0 [0x00CFAC96+1354902]
+	Ordinal0 [0x00CD5A06+1202694]
+	Ordinal0 [0x00CD68E6+1206502]
+	GetHandleVerifier [0x00FC10D2+1633810]
+	GetHandleVerifier [0x010805FC+2417468]
+	GetHandleVerifier [0x00EB3E01+531265]
+	GetHandleVerifier [0x00EB2BE6+526630]
+	Ordinal0 [0x00DC034B+2163531]
+	Ordinal0 [0x00DC50F8+2183416]
+	Ordinal0 [0x00DC51E5+2183653]
+	Ordinal0 [0x00DCED7C+2223484]
+	BaseThreadInitThunk [0x76C06739+25]
+	RtlGetFullPathName_UEx [0x77BD8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BD8E4D+1165]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 99
+Current browser version is 98.0.4758.102 with binary path C:\Users\Hafsah\AppData\Local\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'HAFSAH', ip: '192.168.18.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00E25AD3+2579155]
+	Ordinal0 [0x00DBA3E1+2139105]
+	Ordinal0 [0x00CB40B8+1065144]
+	Ordinal0 [0x00CD3C55+1195093]
+	Ordinal0 [0x00CCF89F+1177759]
+	Ordinal0 [0x00CCD161+1167713]
+	Ordinal0 [0x00CFF9EF+1374703]
+	Ordinal0 [0x00CFF61A+1373722]
+	Ordinal0 [0x00CFAC96+1354902]
+	Ordinal0 [0x00CD5A06+1202694]
+	Ordinal0 [0x00CD68E6+1206502]
+	GetHandleVerifier [0x00FC10D2+1633810]
+	GetHandleVerifier [0x010805FC+2417468]
+	GetHandleVerifier [0x00EB3E01+531265]
+	GetHandleVerifier [0x00EB2BE6+526630]
+	Ordinal0 [0x00DC034B+2163531]
+	Ordinal0 [0x00DC50F8+2183416]
+	Ordinal0 [0x00DC51E5+2183653]
+	Ordinal0 [0x00DCED7C+2223484]
+	BaseThreadInitThunk [0x76C06739+25]
+	RtlGetFullPathName_UEx [0x77BD8E7F+1215]
+	RtlGetFullPathName_UEx [0x77BD8E4D+1165]
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at RegisterServletTest.beforeTest(RegisterServletTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:19Z" name="beforeTest" finished-at="2022-02-26T08:04:19Z" duration-ms="601" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:connectionTest@5dd1c9f2]" started-at="2022-02-26T08:04:19Z" name="beforeTest" finished-at="2022-02-26T08:04:20Z" duration-ms="187" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="checkWebsite()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:20Z" name="checkWebsite" finished-at="2022-02-26T08:04:20Z" duration-ms="190" status="PASS">
+        <test-method signature="checkWebsite()[pri:0, instance:RegisterServletTest@1115ec15]" started-at="2022-02-26T09:58:47Z" name="checkWebsite" finished-at="2022-02-26T09:58:47Z" duration-ms="2" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkWebsite -->
-        <test-method signature="doPostTest()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:20Z" name="doPostTest" finished-at="2022-02-26T08:04:20Z" duration-ms="499" status="PASS">
+        <test-method signature="doPostTest()[pri:0, instance:RegisterServletTest@1115ec15]" started-at="2022-02-26T09:58:47Z" name="doPostTest" finished-at="2022-02-26T09:58:47Z" duration-ms="2" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doPostTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:21Z" name="afterTest" finished-at="2022-02-26T08:04:21Z" duration-ms="41" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:21Z" name="afterTest" finished-at="2022-02-26T08:04:21Z" duration-ms="48" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:connectionTest@5dd1c9f2]" started-at="2022-02-26T08:04:21Z" name="afterTest" finished-at="2022-02-26T08:04:21Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:RegisterServletTest@1115ec15]" started-at="2022-02-26T09:58:47Z" name="afterTest" finished-at="2022-02-26T09:58:47Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- RegisterServletTest -->
-      <class name="UserTests">
-        <test-method signature="listUsersTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:20Z" name="listUsersTest" finished-at="2022-02-26T08:04:20Z" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- listUsersTest -->
-        <test-method signature="showEditFormTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:20Z" name="showEditFormTest" finished-at="2022-02-26T08:04:21Z" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- showEditFormTest -->
-      </class> <!-- UserTests -->
-    </test> <!-- Test -->
-  </suite> <!-- project -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
