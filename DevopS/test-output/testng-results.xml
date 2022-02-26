@@ -1,141 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="4" failed="2" skipped="0">
+<testng-results total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-25T16:46:11Z" name="Suite" finished-at="2022-02-25T16:46:15Z" duration-ms="3696">
+  <suite started-at="2022-02-26T00:04:18Z" name="project" finished-at="2022-02-26T00:04:21Z" duration-ms="3018">
     <groups>
     </groups>
-    <test started-at="2022-02-25T16:46:11Z" name="Test" finished-at="2022-02-25T16:46:15Z" duration-ms="3696">
+    <test started-at="2022-02-26T00:04:18Z" name="Test" finished-at="2022-02-26T00:04:21Z" duration-ms="3018">
       <class name="connectionTest">
-        <test-method signature="getConnectionTest()[pri:0, instance:connectionTest@59b38691]" started-at="2022-02-26T00:46:14Z" name="getConnectionTest" finished-at="2022-02-26T00:46:15Z" duration-ms="29" status="PASS">
+        <test-method signature="getConnectionTest()[pri:0, instance:connectionTest@5dd1c9f2]" started-at="2022-02-26T08:04:21Z" name="getConnectionTest" finished-at="2022-02-26T08:04:21Z" duration-ms="33" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getConnectionTest -->
       </class> <!-- connectionTest -->
       <class name="RegisterServletTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:RegisterServletTest@a22cb6a]" started-at="2022-02-26T00:46:11Z" name="beforeTest" finished-at="2022-02-26T00:46:12Z" duration-ms="1073" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:18Z" name="beforeTest" finished-at="2022-02-26T08:04:19Z" duration-ms="1018" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:UserTests@5dd1c9f2]" started-at="2022-02-26T00:46:12Z" name="beforeTest" finished-at="2022-02-26T00:46:13Z" duration-ms="679" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:19Z" name="beforeTest" finished-at="2022-02-26T08:04:19Z" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:connectionTest@59b38691]" started-at="2022-02-26T00:46:13Z" name="beforeTest" finished-at="2022-02-26T00:46:13Z" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:connectionTest@5dd1c9f2]" started-at="2022-02-26T08:04:19Z" name="beforeTest" finished-at="2022-02-26T08:04:20Z" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="checkWebsite()[pri:0, instance:RegisterServletTest@a22cb6a]" started-at="2022-02-26T00:46:13Z" name="checkWebsite" finished-at="2022-02-26T00:46:13Z" duration-ms="209" status="PASS">
+        <test-method signature="checkWebsite()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:20Z" name="checkWebsite" finished-at="2022-02-26T08:04:20Z" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkWebsite -->
-        <test-method signature="doPostTest()[pri:0, instance:RegisterServletTest@a22cb6a]" started-at="2022-02-26T00:46:13Z" name="doPostTest" finished-at="2022-02-26T00:46:14Z" duration-ms="530" status="PASS">
+        <test-method signature="doPostTest()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:20Z" name="doPostTest" finished-at="2022-02-26T08:04:20Z" duration-ms="499" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doPostTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:RegisterServletTest@a22cb6a]" started-at="2022-02-26T00:46:15Z" name="afterTest" finished-at="2022-02-26T00:46:15Z" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:RegisterServletTest@6aa3a905]" started-at="2022-02-26T08:04:21Z" name="afterTest" finished-at="2022-02-26T08:04:21Z" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:UserTests@5dd1c9f2]" started-at="2022-02-26T00:46:15Z" name="afterTest" finished-at="2022-02-26T00:46:15Z" duration-ms="62" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:21Z" name="afterTest" finished-at="2022-02-26T08:04:21Z" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:connectionTest@59b38691]" started-at="2022-02-26T00:46:15Z" name="afterTest" finished-at="2022-02-26T00:46:15Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:connectionTest@5dd1c9f2]" started-at="2022-02-26T08:04:21Z" name="afterTest" finished-at="2022-02-26T08:04:21Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- RegisterServletTest -->
       <class name="UserTests">
-        <test-method signature="listUsersTest()[pri:0, instance:UserTests@5dd1c9f2]" started-at="2022-02-26T00:46:14Z" name="listUsersTest" finished-at="2022-02-26T00:46:14Z" duration-ms="245" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at UserTests.listUsersTest(UserTests.java:37)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="listUsersTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:20Z" name="listUsersTest" finished-at="2022-02-26T08:04:20Z" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listUsersTest -->
-        <test-method signature="showEditFormTest()[pri:0, instance:UserTests@5dd1c9f2]" started-at="2022-02-26T00:46:14Z" name="showEditFormTest" finished-at="2022-02-26T00:46:14Z" duration-ms="183" status="PASS">
+        <test-method signature="showEditFormTest()[pri:0, instance:UserTests@a22cb6a]" started-at="2022-02-26T08:04:20Z" name="showEditFormTest" finished-at="2022-02-26T08:04:21Z" duration-ms="168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- showEditFormTest -->
-        <test-method signature="updateUserTest()[pri:0, instance:UserTests@5dd1c9f2]" started-at="2022-02-26T00:46:14Z" name="updateUserTest" finished-at="2022-02-26T00:46:14Z" duration-ms="429" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:513)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at org.testng.Assert.assertTrue(Assert.java:52)
-	at UserTests.updateUserTest(UserTests.java:65)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUserTest -->
       </class> <!-- UserTests -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- project -->
 </testng-results>
