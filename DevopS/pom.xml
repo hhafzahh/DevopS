@@ -5,6 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
+
    <properties>
     <!-- additional dependencies -->
     <selenium.groupId>org.seleniumhq.selenium</selenium.groupId>
@@ -28,7 +29,9 @@
 
   </properties>
   
+
   <dependencies>
+
   
   <dependency>
    		<groupId>org.junit.jupiter</groupId>
@@ -37,7 +40,6 @@
    		<scope>test</scope>
    </dependency>
    
-  
 	<dependency>
 		<groupId>javax.servlet</groupId>
 		<artifactId>javax.servlet-api</artifactId>
@@ -65,7 +67,7 @@
 		<artifactId>jstl</artifactId>
 		<version>1.2</version>
 	</dependency>
-	
+
 	
 	
 	 <dependency>
@@ -85,6 +87,7 @@
 	    <artifactId>selenium-java</artifactId>
 	    <version>3.141.59</version>
 	</dependency>
+
 
 </dependencies>
   
