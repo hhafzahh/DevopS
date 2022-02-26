@@ -18,7 +18,7 @@ public class RegisterServletTest {
 	
 	   //Setting system properties of ChromeDriver
 	  //to amend directory path base on your local file path
-	  String chromeDriverDir = "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\tools\\chromedriver\\chromedriver.exe";
+	  String chromeDriverDir = "C:\\Users\\Hafsah\\chromedriver.exe";
 
 	  System.setProperty("webdriver.chrome.driver", chromeDriverDir);
 
